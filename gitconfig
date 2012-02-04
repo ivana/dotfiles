@@ -1,0 +1,15 @@
+[alias]
+	st = status
+	ca = commit -a
+	co = checkout
+	lg = log --graph --oneline --abbrev --decorate=short
+	conflicts = !git ls-files --unmerged | cut -c51- | sort -u | xargs $EDITOR
+	resolve = !git ls-files --unmerged | cut -c51- | sort -u | xargs git add
+[user]
+	name = Ivana Vasilj
+	email = ivasilj@gmail.com
+[color]
+	branch = auto
+	ui = true
+[push]
+	default = tracking
