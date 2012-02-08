@@ -1,10 +1,12 @@
 [alias]
 	st = status
-	ca = commit -a
 	co = checkout
-	lg = log --graph --oneline --abbrev --decorate=short
-	conflicts = !git ls-files --unmerged | cut -c51- | sort -u | xargs $EDITOR
-	resolve = !git ls-files --unmerged | cut -c51- | sort -u | xargs git add
+	ca = commit -a
+	am = commit --amend
+	ac = commit --amend -C
+	ri = rebase -i
+	rc = rebase --continue
+	ra = rebase --abort
 [user]
 	name = Ivana Vasilj
 	email = ivasilj@gmail.com
