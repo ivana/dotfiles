@@ -1,7 +1,9 @@
 [alias]
 	st = status
 	co = checkout
+	cm = commit -m
 	ca = commit -a
+	cam = commit -a -m
 	am = commit --amend
 	ac = commit --amend -C
 	ri = rebase -i
