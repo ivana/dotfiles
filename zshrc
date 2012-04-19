@@ -25,7 +25,7 @@ ZSH_THEME="ivana"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(bundler brew)
+plugins=(brew)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -33,7 +33,7 @@ brewbin=/usr/local/bin
 if [ -d $brewbin ]; then
   export PATH=$brewbin:$(echo $PATH | sed -E "s%$brewbin:?%%")
 fi
-export PATH=~/.rbenv/bin:~/bin:"$PATH"
+export PATH=~/bin:"$PATH"
 
 eval "$(rbenv init -)"
 
