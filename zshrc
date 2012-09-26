@@ -11,7 +11,7 @@ ZSH_THEME="ivana"
 # CASE_SENSITIVE="true"
 
 # Comment this out to disable weekly auto-update checks
-# DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="true"
 
 # Uncomment following line if you want to disable colors in ls
 # DISABLE_LS_COLORS="true"
@@ -31,10 +31,11 @@ source $ZSH/oh-my-zsh.sh
 
 brewbin=/usr/local/bin
 if [ -d $brewbin ]; then
+  export PATH=/usr/local/sbin:"$PATH"
   export PATH=$brewbin:$(echo $PATH | sed -E "s%$brewbin:?%%")
 fi
 export PATH=~/bin:"$PATH"
 
 eval "$(rbenv init -)"
 
-export EDITOR='mate -w'
+export EDITOR='subl -w'
