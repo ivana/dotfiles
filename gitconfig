@@ -1,15 +1,15 @@
 [alias]
-	st = status
-	co = checkout
-	camdc = commit --amend -C HEAD
-	ri = rebase -i
-	rc = rebase --continue
-	ra = rebase --abort
+  st = status
+  co = checkout
+  camdc = commit --amend -C HEAD
+  ri = rebase -i
+  rc = rebase --continue
+  ra = rebase --abort
 [user]
-	name = Ivana Vasilj
-	email = ivasilj@gmail.com
+  name = Ivana Vasilj
+  email = ivasilj@gmail.com
 [color]
-	branch = auto
-	ui = true
+  branch = auto
+  ui = true
 [push]
-	default = tracking
+  default = tracking
