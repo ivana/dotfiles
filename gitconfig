@@ -1,6 +1,8 @@
 [alias]
   st = status
   co = checkout
+  cm = commit -m
+  ca = commit -a
   camdc = commit --amend -C HEAD
   ri = rebase -i
   rc = rebase --continue
