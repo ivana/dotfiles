@@ -1,0 +1,14 @@
+[ui]
+username = Ivana Vasilj <ivana.vasilj@2e-systems.com>
+verbose = True
+
+[alias]
+st = status
+log = log --style=/Users/ivana/Projects/mercurial-cli-templates/map-cmdline.nlog
+tip = tip --style=/Users/ivana/Projects/mercurial-cli-templates/map-cmdline.nlog
+slog = log --style=/Users/ivana/Projects/mercurial-cli-templates/map-cmdline.slog -l10
+glog = glog --style=/Users/ivana/Projects/mercurial-cli-templates/map-cmdline.sglog -l10
+
+[extensions]
+color =
+graphlog =
