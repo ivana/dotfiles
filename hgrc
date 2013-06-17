@@ -2,13 +2,37 @@
 username = Ivana Vasilj <ivana.vasilj@2e-systems.com>
 verbose = True
 
+
+[extensions]
+color =
+graphlog =
+rebase =
+
+# ~ git rebase --interactive
+histedit =
+
+# ~ git add --interactive | -i
+record =
+
+# ~ git stash # https://bitbucket.org/astiob/hgshelve
+hgshelve = /Users/ivana/Projects/hgshelve/hgshelve.py
+
+
 [alias]
-st = status
 log = log --style=/Users/ivana/Projects/mercurial-cli-templates/map-cmdline.nlog
 tip = tip --style=/Users/ivana/Projects/mercurial-cli-templates/map-cmdline.nlog
 slog = log --style=/Users/ivana/Projects/mercurial-cli-templates/map-cmdline.slog -l10
 glog = glog --style=/Users/ivana/Projects/mercurial-cli-templates/map-cmdline.sglog -l10
 
-[extensions]
-color =
-graphlog =
+r = rebase
+pr = pull --rebase
+rc = rebase --continue
+ra = rebase --abort
+
+h = histedit
+hc = histedit --continue
+ha = histedit --abort
+
+# cancel an uncommitted merge (and lose your changes)
+clean = update --clean
+discard = clean
