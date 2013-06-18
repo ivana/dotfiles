@@ -19,9 +19,13 @@ hgshelve = /Users/ivana/Projects/hgshelve/hgshelve.py
 
 
 [alias]
+ca = ci --addremove
+cm = ci --amend
+br = branch
+
 log = log --style=/Users/ivana/Projects/mercurial-cli-templates/map-cmdline.nlog
 tip = tip --style=/Users/ivana/Projects/mercurial-cli-templates/map-cmdline.nlog
-slog = log --style=/Users/ivana/Projects/mercurial-cli-templates/map-cmdline.slog -l10
+slog = log --style=/Users/ivana/Projects/mercurial-cli-templates/map-cmdline.slog
 glog = glog --style=/Users/ivana/Projects/mercurial-cli-templates/map-cmdline.sglog -l10
 
 r = rebase
@@ -36,3 +40,7 @@ ha = histedit --abort
 # cancel an uncommitted merge (and lose your changes)
 clean = update --clean
 discard = clean
+
+
+[diff]
+git = True
