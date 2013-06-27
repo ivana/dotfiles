@@ -44,3 +44,8 @@ discard = clean
 
 [diff]
 git = True
+
+
+[paths]
+auam = ssh://hg@hg/auamanager
+auaweb = ssh://hg@hg/auaweb
