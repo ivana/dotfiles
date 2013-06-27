@@ -1,9 +1,10 @@
 [alias]
   st = status
+  br = branch
   co = checkout
-  cm = commit -m
+  ci = commit
   ca = commit -a
-  camdc = commit --amend -C HEAD
+  cm = commit --amend -C HEAD
   ri = rebase -i
   rc = rebase --continue
   ra = rebase --abort
