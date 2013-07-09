@@ -29,9 +29,11 @@ slog = log --style=/Users/ivana/Projects/mercurial-cli-templates/map-cmdline.slo
 glog = glog --style=/Users/ivana/Projects/mercurial-cli-templates/map-cmdline.sglog -l10
 
 r = rebase
-pr = pull --rebase
 rc = rebase --continue
 ra = rebase --abort
+pr = pull --rebase
+push = push -r .
+out = out -r .
 
 h = histedit
 hc = histedit --continue
