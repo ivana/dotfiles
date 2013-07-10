@@ -43,6 +43,8 @@ ha = histedit --abort
 clean = update --clean
 discard = clean
 
+blame = blame -unld
+
 
 [diff]
 git = True
