@@ -8,10 +8,13 @@ color =
 graphlog =
 rebase =
 
+# for strip command, ~ git reset --hard
+mq =
+
 # ~ git rebase --interactive
 histedit =
 
-# ~ git add --interactive | -i
+# ~ git add -p
 record =
 
 # ~ git stash # https://bitbucket.org/astiob/hgshelve
