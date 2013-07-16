@@ -26,6 +26,15 @@ ca = ci --addremove
 cm = ci --amend
 br = branch
 
+sh = shelve
+shn = shelve --name
+shl = shelve --list
+sha = shelve --all
+shp = shelve --append
+unsh = unshelve
+unshn = unshelve --name
+unshi = unshelve --inspect
+
 log = log --style=/Users/ivana/Projects/mercurial-cli-templates/map-cmdline.nlog
 tip = tip --style=/Users/ivana/Projects/mercurial-cli-templates/map-cmdline.nlog
 slog = log --style=/Users/ivana/Projects/mercurial-cli-templates/map-cmdline.slog
