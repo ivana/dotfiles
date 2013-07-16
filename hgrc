@@ -40,7 +40,7 @@ tip = tip --style=/Users/ivana/Projects/mercurial-cli-templates/map-cmdline.nlog
 slog = log --style=/Users/ivana/Projects/mercurial-cli-templates/map-cmdline.slog
 glog = glog --style=/Users/ivana/Projects/mercurial-cli-templates/map-cmdline.sglog -l10
 
-r = rebase
+rebase = rebase --keepbranches
 rc = rebase --continue
 ra = rebase --abort
 pr = pull --rebase
