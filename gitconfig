@@ -10,7 +10,7 @@
   ra = rebase --abort
 [user]
   name = Ivana Vasilj
-  email = ivasilj@gmail.com
+	email = dev@ivana.im
 [color]
   branch = auto
   ui = true
