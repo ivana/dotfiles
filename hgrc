@@ -6,6 +6,7 @@ verbose = True
 [extensions]
 color =
 graphlog =
+purge =
 rebase =
 
 # for strip command, ~ git reset --hard
@@ -34,6 +35,9 @@ shp = shelve --append
 unsh = unshelve
 unshn = unshelve --name
 unshi = unshelve --inspect
+
+pp = purge --all --print
+purge = purge --all
 
 log = log --style=/Users/ivana/Projects/mercurial-cli-templates/map-cmdline.nlog
 tip = tip --style=/Users/ivana/Projects/mercurial-cli-templates/map-cmdline.nlog
