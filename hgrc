@@ -26,15 +26,17 @@ hgshelve = /Users/ivana/Projects/hgshelve/hgshelve.py
 ca = ci --addremove
 cm = ci --amend
 br = branch
+brs = branches
 
 sh = shelve
-shn = shelve --name
+unsh = unshelve
+shi = unshelve --inspect
 shl = shelve --list
 sha = shelve --all
 shp = shelve --append
-unsh = unshelve
+shn = shelve --name
+shin = unshelve --inspect --name
 unshn = unshelve --name
-unshi = unshelve --inspect
 
 pp = purge --all --print
 purge = purge --all
@@ -47,6 +49,7 @@ glog = glog --style=/Users/ivana/Projects/mercurial-cli-templates/map-cmdline.sg
 rebase = rebase --keepbranches
 rc = rebase --continue
 ra = rebase --abort
+pu = pull -u
 pr = pull --rebase
 push = push -r .
 out = out -r .
@@ -56,8 +59,7 @@ hc = histedit --continue
 ha = histedit --abort
 
 # cancel an uncommitted merge (and lose your changes)
-clean = update --clean
-discard = clean
+discard = update --clean
 
 blame = blame -unld
 
