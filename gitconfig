@@ -4,15 +4,18 @@
   co = checkout
   ci = commit
   ca = commit -a
-  cm = commit --amend -C HEAD
+  amend = commit --amend -C HEAD
   ri = rebase -i
   rc = rebase --continue
   ra = rebase --abort
+  lg = log --graph --pretty=format:'%C(auto)%h %cD %Cred%cN %Cgreen%s'
 [user]
   name = Ivana Vasilj
-	email = dev@ivana.im
+  email = dev@ivana.im
 [color]
   branch = auto
   ui = true
 [push]
   default = tracking
+[pull]
+  rebase = true
