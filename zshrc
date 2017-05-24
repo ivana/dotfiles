@@ -36,6 +36,4 @@ if [ -d $brewbin ]; then
 fi
 export PATH=~/bin:"$PATH"
 
-eval "$(rbenv init -)"
-
 export EDITOR='subl -w'
