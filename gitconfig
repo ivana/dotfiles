@@ -5,10 +5,13 @@
   ci = commit
   ca = commit -a
   amend = commit --amend -C HEAD
+  amendm = commit --amend
   ri = rebase -i
   rc = rebase --continue
   ra = rebase --abort
+  cpk = cherry-pick
   lg = log --graph --pretty=format:'%C(auto)%h %cD %Cred%cN %Cgreen%s'
+  stashdiff = stash show -p
 [user]
   name = Ivana Vasilj
   email = dev@ivana.im
